@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="v-scrollable">
+   <vaadin-vertical-layout margin="false">
+    <vaadin-horizontal-layout width-full>
+     <vaadin-image source="theme://home.png" width="40px" _id="imgHome" :expand="2"></vaadin-image>
+     <vaadin-image source="theme://cnf.jpeg" width="40px" _id="imgConfi"></vaadin-image>
+    </vaadin-horizontal-layout>
+    <vaadin-vertical-layout visible="false" margin="false" _id="vlyConfiguracion">
+     <vaadin-label :center>
+      <b>Configuración</b>
+     </vaadin-label>
+     <vaadin-horizontal-layout :center>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7e0" style-name="tiny primary" plain-text _id="btnCargarIndice">
+        Cargar índice invertido 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e912" style-name="tiny friendly" plain-text _id="btnGenerarIndice">
+        Generar indice invertido 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e912" style-name="tiny friendly" plain-text _id="btnGenerarRank">
+        PageRank 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-tab-sheet _id="tabInformacion">
+      <tab caption="Índice invertido" icon="fonticon://Vaadin-Icons/e739" selected>
+       <vaadin-vertical-layout>
+        <vaadin-label _id="lblIndiceInvertidoInfo"></vaadin-label>
+       </vaadin-vertical-layout>
+      </tab>
+      <tab caption="Enlaces" icon="fonticon://Vaadin-Icons/e733">
+       <vaadin-vertical-layout>
+        <vaadin-label _id="lbEnlacesAleatorios"></vaadin-label>
+       </vaadin-vertical-layout>
+      </tab>
+      <tab caption="PageRank" icon="fonticon://Vaadin-Icons/e7e1">
+       <vaadin-vertical-layout>
+        <vaadin-label _id="lblPageRank"></vaadin-label>
+       </vaadin-vertical-layout>
+      </tab>
+     </vaadin-tab-sheet>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout _id="vlyPrincipal">
+     <vaadin-label :center>
+      <b>BUSCADOR</b>
+     </vaadin-label>
+     <vaadin-horizontal-layout width="60%" :center>
+      <vaadin-text-field caption-as-html style-name="tiny" placeholder="¿Qué estas buscando?" width-full _id="txtBusqueda" :expand="3"></vaadin-text-field>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="tiny friendly" plain-text _id="btnBuscar"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-label visible="false" width="80%" _id="lblInfoBusquedad" :center></vaadin-label>
+     <vaadin-vertical-layout caption-as-html visible="false" icon="fonticon://Vaadin-Icons/e7ee" caption="<b>Resultados de la busquedad</b>" style-name="v-scrollable" width="80%" _id="vlyResultados" :center></vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

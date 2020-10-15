@@ -1,0 +1,10 @@
+cloud/jimenez/vaadin/PageRank/Reduce.class
+cloud/jimenez/vaadin/PageRank/Reduce$Counter.class
+cloud/jimenez/vaadin/IndiceInvertido/invertedIndexReducer.class
+cloud/jimenez/vaadin/ControladorBuscador.class
+cloud/jimenez/vaadin/PageRank/Map.class
+cloud/jimenez/vaadin/PageRank/Node.class
+cloud/jimenez/vaadin/MyUI.class
+cloud/jimenez/vaadin/MyUI$MyUIServlet.class
+cloud/jimenez/vaadin/FormBuscador.class
+cloud/jimenez/vaadin/IndiceInvertido/InvertedIndexMapper.class
